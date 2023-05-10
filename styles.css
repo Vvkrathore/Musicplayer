@@ -1,0 +1,1072 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ---------body------- */
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #0c1027;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+/* -------navbar-------- */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  /* font-size: 1.2rem; */
+}
+
+.navbar-left div:nth-child(2) {
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.897);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 9rem;
+  margin-left: 20px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+/* ---------Search------- */
+
+.search {
+  padding: 10px 40px;
+  /* margin: 20px 50px; */
+  position: relative;
+}
+
+.search input {
+  padding: 5px 14px 5px 45px;
+  border-radius: 24px;
+  color: #848484;
+  background-color: #141b41;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+}
+
+.search .fa-magnifying-glass {
+  position: absolute;
+  top: 17px;
+  left: 52px;
+  color: #848484;
+  cursor: pointer;
+}
+
+.search .fa-microphone {
+  position: absolute;
+  top: 17px;
+  right: 55px;
+  color: #848484;
+  cursor: pointer;
+}
+
+.navbar-right .bell-icon i {
+  font-size: 1.4rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-right .bell-icon i::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+/* ---------Profile Image------- */
+
+.profile-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 50px;
+  margin-left: 40px;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ---------main------- */
+
+main {
+  width: 97%;
+  /* height: 78vh; */
+  height: auto;
+  /* border: 2px solid #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  /* margin: 20px auto 0px; */
+}
+
+/* ---------header------- */
+
+header {
+  width: 60%;
+  height: 100%;
+  /* border: 2px solid #fff; */
+  margin-right: 30px;
+}
+
+/* ---------header title------- */
+
+header .title {
+  width: 99%;
+  height: 32vh;
+  /* border: 2px solid #fff; */
+  margin-bottom: 15px;
+  /* margin-top: 6px; */
+  display: flex;
+  align-items: center;
+  background-color: #141b41;
+}
+
+header .title .title-image {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid #fff; */
+  margin-right: 25px;
+}
+
+header .title .title-image img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+header .title .title-heading {
+  width: 100%;
+  height: 80%;
+  /* border: 1px solid #fff; */
+  color: #fff;
+}
+
+header .title .title-heading .title-top-side {
+  width: 100%;
+  height: 85%;
+  /* border: 1px solid #fff; */
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+header .title .title-heading .title-top-side::after {
+  content: "Follow";
+  position: absolute;
+  font-size: 0.7rem;
+  left: 150px;
+  bottom: 35px;
+  color: #848484;
+}
+
+header .title .title-heading .title-top-side h2 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  position: relative;
+  letter-spacing: 1.4px;
+  margin-top: 7px;
+}
+
+header .title .title-heading .title-top-side h2::after {
+  content: "851 Followers";
+  position: absolute;
+  font-size: 0.7rem;
+  right: 20px;
+  top: 8px;
+  color: #848484;
+  letter-spacing: -1px;
+}
+
+header .title .title-heading .title-top-side h4 {
+  font-size: 0.85rem;
+  color: #848484;
+  margin-bottom: 4px;
+}
+
+header .title .title-heading .title-top-side p {
+  font-size: 0.7rem;
+  margin-bottom: 8px;
+  color: #848484;
+  /* line-height: 16px; */
+}
+
+header .title .title-heading .title-top-side button {
+  width: 20%;
+  height: 35%;
+  color: #fff;
+  background-color: #b043d9;
+  margin-right: 30px;
+  font-size: 1rem;
+  /* position: absolute;
+  bottom: 0; */
+  cursor: pointer;
+}
+
+header .title .title-heading .title-top-side span {
+  font-size: 0.8rem;
+  /* position: absolute;
+  bottom: 11px; */
+  left: 140px;
+  color: rgba(255, 255, 255, 0.893);
+  cursor: pointer;
+}
+
+header .title .title-heading small {
+  font-size: 0.7rem;
+  color: #848484;
+  margin-top: 10px;
+}
+
+/* ---------header playlist------- */
+
+header .playlist {
+  width: 99%;
+  height: 43.7vh;
+  /* border: 2px solid #fff; */
+  color: #fff;
+  /* ----have max song list than scroll show---- */
+  overflow: auto;
+}
+
+header .playlist::-webkit-scrollbar {
+  /* ----scrollbar hide---- */
+  display: none;
+}
+
+header .playlist li {
+  width: 100%;
+  height: 15%;
+  /* border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+  background-color: #282828;
+  cursor: pointer;
+}
+
+header .playlist li .num {
+  margin: 0px 10px 0px 20px;
+  font-size: 0.7rem;
+  color: #848484;
+}
+
+header .playlist li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+header .playlist li h5 {
+  font-size: 0.65rem;
+  margin-right: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+header .playlist li h5 div {
+  font-size: 0.55rem;
+  margin-top: 5px;
+  color: #848484;
+}
+
+header .playlist li .time {
+  font-size: 0.7rem;
+  color: #848484;
+  position: absolute;
+  left: 39%;
+}
+
+header .playlist li .icon-list {
+  color: #848484;
+  position: absolute;
+  right: 4%;
+  display: flex;
+  align-items: center;
+}
+
+header .playlist li .icon-list .bi {
+  margin-right: 20px;
+  font-size: 0.9rem;
+}
+
+header .playlist li .icon-list .bi-plus {
+  font-size: 1.2rem;
+}
+
+/* ----------aside--------- */
+
+aside {
+  width: 25%;
+  height: 100%;
+  /* border: 2px solid #fff; */
+}
+
+aside .similar-arrists,
+.recent-played {
+  width: 100%;
+  height: 38.6vh;
+  /* border: 2px solid #fff; */
+  color: #fff;
+}
+
+aside .similar-arrists {
+  margin-bottom: 2px;
+}
+
+aside .recent-played {
+  padding-top: 4px;
+}
+
+aside .similar-arrists .list {
+  width: 100%;
+  height: 33vh;
+  /* ----have max song list than scroll show---- */
+  overflow: auto;
+  margin-top: 12px;
+}
+
+aside .similar-arrists .list::-webkit-scrollbar {
+  /* ----scrollbar hide---- */
+  display: none;
+}
+
+aside .similar-arrists h4 {
+  margin: 1px 0px 4px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+aside .similar-arrists h4 span {
+  margin-left: 20%;
+  font-size: 0.7rem;
+  color: #848484;
+}
+
+aside .recent-played h4 {
+  margin: 19px 0px 12px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+aside .recent-played h4 span {
+  /* margin-left: 120px; */
+  margin-left: 12.5%;
+  font-size: 0.7rem;
+  color: #848484;
+}
+
+/* ----------.similar-arrists--------- */
+
+aside .similar-arrists .list li {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid #fff; */
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+aside .similar-arrists .list li img {
+  width: 70px;
+  height: 71px;
+  margin: 0px 20px 2px 8px;
+  /* padding: 4px; */
+}
+
+aside .similar-arrists .list li h5 {
+  font-size: 0.7rem;
+  margin-right: 12%;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;   */
+}
+
+aside .similar-arrists .list li h5 div {
+  font-size: 0.55rem;
+  margin-top: 9px;
+  color: #848484;
+}
+
+aside .similar-arrists .list li .dot {
+  text-align: center;
+  color: #848484;
+}
+
+aside .similar-arrists .list li .dot .time {
+  font-size: 0.6rem;
+}
+
+/* ---------recent-played---------- */
+
+aside .recent-played .songList {
+  width: 100%;
+  height: 32.5vh;
+  /* ----have max song list than scroll show---- */
+  overflow: auto;
+  position: relative;
+}
+
+aside .recent-played .songList::-webkit-scrollbar {
+  /* ----scrollbar hide---- */
+  display: none;
+}
+
+aside .recent-played .songList li {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid #fff; */
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+aside .recent-played .songList li span {
+  margin-left: 15px;
+  margin-right: 14px;
+  font-size: 0.7rem;
+  color: #848484;
+}
+
+aside .recent-played .songList li img {
+  width: 40px;
+  height: 40px;
+  margin: 0px 20px 2px 8px;
+  /* padding: 4px; */
+}
+
+aside .recent-played .songList li h5 {
+  font-size: 0.65rem;
+  margin-right: 25%;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;   */
+}
+
+aside .recent-played .songList li h5 div {
+  font-size: 0.55rem;
+  margin-top: 5px;
+  color: #848484;
+}
+
+aside .recent-played .songList li i {
+  color: #848484;
+}
+
+/* ---------wave---------- */
+
+aside .recent-played .songList li .wave {
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid #fff; */
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+aside .recent-played .songList li .wave .wave1 {
+  width: 2px;
+  height: 10px;
+  margin-right: 3px;
+  background-color: #36e2ac;
+  border-radius: 10px 10px 0px 0px;
+  animation: wave 0.5s linear infinite;
+}
+
+aside .recent-played .songList li .wave .wave1:nth-child(2) {
+  height: 13px;
+  animation-delay: 0.8;
+}
+
+aside .recent-played .songList li .wave .wave1:nth-child(3) {
+  height: 8px;
+  animation-delay: 0.4;
+}
+
+@keyframes wave {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 15px;
+  }
+  110% {
+    height: 10px;
+  }
+}
+
+/* ------song is play or active------- */
+
+aside .recent-played .songList #active span {
+  opacity: 0;
+}
+
+aside .recent-played .songList #active span:hover {
+  opacity: 1;
+}
+
+/* ------------aside-end--------- */
+
+/* ----------master-Play-start-------- */
+
+.master-Play {
+  width: 99%;
+  height: 9vh;
+  /* border: 2px solid #fff; */
+  margin: 0px auto 0px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #282828;
+  position: fixed;
+  bottom: 0;
+}
+
+.master-Play .first {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 9%;
+  /* border: 1px solid #fff; */
+}
+
+.master-Play .first img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.master-Play .first .title {
+  /* border: 1px solid #fff; */
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.897);
+  /* --------text overflow------ */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 37%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.master-Play .first .title .subtitle {
+  font-size: 0.6rem;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #848484;
+}
+
+.master-Play .first .bi {
+  margin-right: 10px;
+  /* margin-top: 4px; */
+  color: #848484;
+  cursor: pointer;
+}
+
+/* --------second div - icon-------- */
+
+.master-Play .second {
+  width: 40%;
+  height: 100%;
+  /* border: 1px solid #fff; */
+}
+
+.master-Play .second .icon {
+  height: 50%;
+  width: 100%;
+  /* border: 1px solid #fff; */
+  text-align: center;
+  margin-top: 7px;
+}
+
+.master-Play .second .icon .bi {
+  font-size: 1.1rem;
+  margin-left: 20px;
+  outline: 0;
+  color: #848484;
+  cursor: pointer;
+}
+
+.master-Play .second .icon .bi-pause-circle {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.925);
+}
+
+.master-Play .second .bar {
+  width: 100%;
+  height: 40%;
+  /* border: 2px solid #fff; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.master-Play .second .bar span {
+  font-size: 0.8rem;
+  color: #848484;
+  /* position: absolute; */
+  margin: 0px 30px 0px 30px;
+}
+
+.master-Play .second .bar .bar2 {
+  width: 60%;
+  height: 3px;
+  /* border: 1px solid #fff; */
+  position: relative;
+  background-color: lightgray;
+}
+
+.master-Play .second .bar .bar2 .innerBar {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  background-color: #36e2ac;
+  top: 0;
+}
+
+.master-Play .second .bar .bar2 .dot {
+  position: absolute;
+  top: -7px;
+  /* left: 200px; */
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.master-Play .second .bar .bar2 input {
+  width: 100%;
+  position: absolute;
+  top: -7px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 999999999999999999;
+}
+
+/* ---------- master-Play third column------- */
+
+.master-Play .third {
+  width: 30%;
+  height: 100%;
+  /* border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.master-Play .third .bi {
+  font-size: 1rem;
+  margin-left: 20px;
+  color: #848484;
+  cursor: pointer;
+}
+
+.master-Play .third .bi-volume-down-fill {
+  font-size: 1.9rem;
+}
+
+.master-Play .third .vol-bar {
+  width: 29%;
+  height: 4px;
+  /* border: 1px solid #fff; */
+  position: relative;
+  background-color: lightgrey;
+}
+
+.master-Play .third .vol-bar .vol-bar2 {
+  width: 50%;
+  height: 100%;
+  background: #36e2ac;
+  position: absolute;
+  top: 0;
+}
+
+.master-Play .third .vol-bar .vol-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: -6px;
+  left: 50%;
+}
+
+.master-Play .third .vol-bar input {
+  width: 100%;
+  position: absolute;
+  top: -7px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 999999999999999999;
+}
+
+/* -----------media query----------- */
+
+@media screen and (max-width: 1150px) {
+  /* -----recent-played------- */
+
+  aside .recent-played {
+    padding-top: 4px;
+    margin-right: 30px;
+  }
+
+  aside .similar-arrists h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  aside .similar-arrists h4 span {
+    margin-left: 65px;
+    font-size: 0.6rem;
+  }
+
+  aside .recent-played h4 {
+    margin: 1px 0px 12px 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  aside .recent-played h4 span {
+    margin-left: 65px;
+    font-size: 0.6rem;
+  }
+
+  /* --------recent-played------- */
+  aside .recent-played .songList li h5 {
+    font-size: 0.6rem;
+    margin-right: 80px;
+  }
+
+  aside .recent-played .songList li i {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+
+  /* ----------master-Play--------- */
+
+  .master-Play .third .vol-bar .vol-dot {
+    width: 12px;
+    height: 12px;
+    top: -4px;
+    left: 30px;
+  }
+
+  .master-Play {
+    width: 99%;
+    height: 8vh;
+    left: 0px;
+  }
+
+  .master-Play .second .bar .bar2 .dot {
+    top: -5px;
+    left: 70px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .master-Play .first {
+    /* width: 18%; */
+    /* height: 100%; */
+    margin-left: 35px;
+  }
+
+  .master-Play .first img {
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+  }
+
+  .master-Play .first .title {
+    font-size: 0.55rem;
+    /* margin-top: 5px; */
+    overflow: visible;
+    text-overflow: ellipsis;
+    white-space: normal;
+    /* width: 30%; */
+    /* margin-right: 50px; */
+  }
+
+  .master-Play .first .title .subtitle {
+    font-size: 0.5rem;
+    margin-top: 2px;
+  }
+
+  .master-Play .second {
+    width: 40%;
+    height: 96%;
+    margin-left: 20px;
+    /* border: 1px solid #fff; */
+  }
+
+  /* ----------aside----------- */
+
+  aside {
+    width: 30%;
+    /* height: 100%; */
+    vertical-align: top;
+    /* border: 2px solid #fff; */
+  }
+
+  aside .similar-arrists,
+  .recent-played {
+    width: 100%;
+    height: 35vh;
+  }
+
+  aside .similar-arrists {
+    margin-bottom: 25px;
+  }
+
+  aside .recent-played {
+    padding-top: 4px;
+    margin-right: 20px;
+  }
+
+  aside .similar-arrists .list {
+    width: 100%;
+    height: 32vh;
+    margin-top: -10px;
+  }
+
+  aside .similar-arrists h4 {
+    margin: 1px 0px 25px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  aside .similar-arrists h4 span {
+    margin-left: 50px;
+    font-size: 0.6rem;
+  }
+
+  aside .recent-played h4 {
+    margin: 1px 0px 12px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  aside .recent-played h4 span {
+    margin-left: 40px;
+    font-size: 0.6rem;
+  }
+  /* --------similar-arrists------- */
+  aside .similar-arrists .list li img {
+    width: 60px;
+    height: 61px;
+    margin: 0px 20px 2px 8px;
+  }
+
+  aside .similar-arrists .list li h5 {
+    font-size: 0.6rem;
+    margin-right: 25px;
+    white-space: normal;
+  }
+
+  aside .similar-arrists .list li h5 div {
+    font-size: 0.5rem;
+    margin-top: 6px;
+  }
+
+  /* --------recent-played------- */
+  aside .recent-played .songList li span {
+    margin-left: 12px;
+    margin-right: 14px;
+    font-size: 0.7rem;
+  }
+
+  aside .recent-played .songList li img {
+    width: 37px;
+    height: 37px;
+  }
+
+  aside .recent-played .songList li h5 {
+    font-size: 0.6rem;
+    margin-right: 50px;
+  }
+
+  aside .recent-played .songList li i {
+    font-size: 0.9rem;
+  }
+
+  /* ----------wave------------ */
+
+  aside .recent-played .songList li .wave {
+    width: 13px;
+    height: 10px;
+    margin-left: 12px;
+  }
+
+  /* ----------header title------------ */
+
+  /* ---------header------- */
+
+  header {
+    margin-right: 20px;
+  }
+
+  /* ---------header title------- */
+
+  header .title {
+    width: 99%;
+    height: 32vh;
+  }
+
+  header .title .title-image {
+    width: 50%;
+    height: 100%;
+    margin-right: 20px;
+  }
+
+  header .title .title-image img {
+    width: 100%;
+    height: 90%;
+  }
+
+  header .title .title-heading .title-top-side h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  header .title .title-heading .title-top-side h2::after {
+    font-size: 0.7rem;
+    right: 30px;
+  }
+
+  header .title .title-heading .title-top-side h4 {
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+  }
+
+  header .title .title-heading .title-top-side p {
+    font-size: 0.6rem;
+    line-height: 12px;
+  }
+
+  header .title .title-heading .title-top-side button {
+    width: 80px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  header .title .title-heading .title-top-side span {
+    font-size: 0.7rem;
+    bottom: 11px;
+    left: 110px;
+  }
+
+  header .title .title-heading small {
+    font-size: 0.54rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 0.9rem;
+  }
+
+  main {
+    width: 110%;
+  }
+
+  aside .similar-arrists h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  aside .similar-arrists h4 span {
+    margin-left: 33%;
+  }
+
+  aside .recent-played .songList li h5 {
+    margin-right: 15% !important;
+  }
+
+  aside .similar-arrists .list li h5 {
+    margin-right: 7.5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  aside .recent-played h4 span {
+    margin-left: 20.5%;
+  }
+
+  aside .recent-played h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  header {
+    width: 60%;
+    margin-right: 1.2%;
+  }
+
+  aside {
+    width: 28%;
+  }
+
+  aside .recent-played .songList li h5 {
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-left div:nth-child(2) {
+    font-size: 0.7rem;
+    margin-left: -35px;
+  }
+
+  .logo img {
+    width: 8rem;
+    margin-left: 2px;
+  }
+
+  .search {
+    padding: 10px 30px;
+  }
+}
